@@ -6,7 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 
 Route::apiResource('users', UserController::class);
-// Route::apiResource('categories', CategoryController::class);
+Route::apiResource('categories', CategoryController::class);
 
 Route::get('/user', function (Request $request) {
     return $request->user();
